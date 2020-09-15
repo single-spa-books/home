@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  flex-direction: column;
+  padding: 40px;
+}
+
+.home__label,
+.home__input,
+.home__button {
+  margin: 10px;
+}
+
+.home__label {
+  font-size: 24px;
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .home__label {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home__label {
+    font-size: 3vw;
+  }
+}
+
+.home__input {
+  font-size: 24px;
+  height: 50px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.home__button {
+  font-size: 14px;
+  border: none;
+  height: 40px;
+  padding: 10px;
+  width: 50%;
+  max-width: 250px;
+  background: rgb(28, 27, 29);
+  color: rgb(236, 236, 236);
+}

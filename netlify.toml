@@ -1,0 +1,20 @@
+[[plugins]]
+package = "./plugins/fetch-importmaps"
+
+[build.environment]
+  IMPORTMAP_FILE = "^[0-9a-f]{7}.single-spa-books-home.js$"
+  IMPORTMAP_SERVICE = "@single-spa-books/home"
+
+[context.production.environment]
+  IMPORTMAP_FILE_URL = "https://single-spa-books-home.netlify.app/"
+  IMPORTMAP_URL = "https://single-spa-books.herokuapp.com/services?skip_url_check"
+
+[context.develop.environment]
+  IMPORTMAP_FILE_URL = "https://develop--single-spa-books-home.netlify.app/"
+  IMPORTMAP_URL = "https://single-spa-books.herokuapp.com/services?env=dev&skip_url_check"
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+
