@@ -1,5 +1,5 @@
 [[plugins]]
-package = "./plugins/fetch-importmaps"
+package = "netlify-plugin-importmap-single-spa"
 
 [build.environment]
   IMPORTMAP_FILE = "^[0-9a-f]{7}.single-spa-books-home.js$"
